@@ -154,7 +154,7 @@ SMTP_PASSWORD="PASSWORD"
 ### 4. Run the Backend
 
 ```bash
-cd src
+to bring up the backend server
 python -m src.application
 or
 run pipeline directly end to end from CLI
