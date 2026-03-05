@@ -40,7 +40,7 @@ export function PipelineForm() {
 
         // Call actual backend API
         try {
-            const response = await fetch('/generate-config', {
+            const response = await fetch('https://backendtool.vercel.app/generate-config', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

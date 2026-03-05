@@ -72,7 +72,7 @@ const Index = () => {
         const fetchPipelines = async () => {
             try {
                 // Adjust the endpoint to match your backend exactly, e.g., /api/pipelines
-                const response = await fetch('/thesis-names');
+                const response = await fetch('https://backendtool.vercel.app/thesis-names');
                 if (response.ok) {
                     const data = await response.json();
 
@@ -125,7 +125,7 @@ const Index = () => {
         const fetchCompanies = async () => {
             setIsLoadingCompanies(true);
             try {
-                const response = await fetch('/companies-by-thesis', {
+                const response = await fetch('https://backendtool.vercel.app/companies-by-thesis', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ thesis_name: selectedPipeline })

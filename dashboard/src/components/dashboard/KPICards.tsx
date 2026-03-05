@@ -5,7 +5,7 @@ import { DashboardStats } from '@/types/dashboard';
 export function KPICards({ stats }: { stats: DashboardStats }) {
     if (!stats) return null;
 
-    const topService = Object.entries(stats.byService || {}).sort((a: [string, number], b: [string, number]) => b[1] - a[1])[0];
+
 
     const cards = [
         {
@@ -37,8 +37,8 @@ export function KPICards({ stats }: { stats: DashboardStats }) {
             accent: true,
         },
         {
-            label: topService ? topService[0] : 'Top Service',
-            value: topService ? topService[1].toString() : '0',
+            label: 'Cost Segregation',
+            value: (stats.byService?.['Cost Segregation'] ?? 0).toString(),
             icon: TrendingUp,
             change: 'Companies offering',
             accent: false,

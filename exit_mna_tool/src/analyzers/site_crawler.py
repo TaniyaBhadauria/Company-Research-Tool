@@ -439,7 +439,8 @@ that match the following acquisition thesis:
 
 **Target Thesis: {thesis}**  
 
-**Your task:** Analyze the website content of a candidate company (provided below) and extract structured information based on the above thesis.  
+**Your task:** Analyze the website content of a candidate company (provided below) and extract structured information based on the above thesis.
+Exclude companies that do not meet the employee threshold and revenue threshold mentioned in thesis and mention it in the exclusion reason.
 Only use information available on the company website.
 
 Website content (Chunk {chunk_idx}/{len(chunks)}):

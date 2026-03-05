@@ -52,6 +52,9 @@ CREATE TABLE IF NOT EXISTS companies (
 
 CREATE UNIQUE INDEX IF NOT EXISTS idx_companies_name_state_website
 ON companies (name, state, website);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_companies_name_state
+ON companies (name, state);
 """
 
 

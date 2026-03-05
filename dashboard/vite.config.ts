@@ -14,15 +14,15 @@ export default defineConfig(({ mode }) => ({
     // Add a proxy to forward API requests to your Python backend
     proxy: {
       '/generate-config': {
-        target: 'http://127.0.0.1:5000',
+        target: 'https://backendtool.vercel.app/',
         changeOrigin: true,
       },
       '/thesis-names': {
-        target: 'http://127.0.0.1:5000',
+        target: 'https://backendtool.vercel.app/',
         changeOrigin: true,
       },
       '/companies-by-thesis': {
-        target: 'http://127.0.0.1:5000',
+        target: 'https://backendtool.vercel.app/',
         changeOrigin: true,
       }
     }
