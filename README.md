@@ -2,6 +2,8 @@
 
 A platform for screening and analyzing companies that align with theses.
 
+Checkout live demo at: https://dashboard-phi-mauve-36.vercel.app/
+
 ---
 
 ## Overview
